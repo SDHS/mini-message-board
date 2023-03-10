@@ -1,0 +1,17 @@
+extends ../layout/layout.pug
+
+block append head
+  style
+    include ./style.css
+block content
+  - const options = { year: 'numeric', month: 'long', day: 'numeric', hour: "2-digit", minute: "2-digit", second: "2-digit", };
+  h1 Message Board
+  section(class="message-list")
+    if messages.length
+      each message in messages
+        div(class="message")
+          h3(class="message__author")= message.user
+          p(class="message__text")=message.text
+          p(class="message__timestamp")=message.added.toLocaleDateString("en-US", options)
+    else
+      h3 No messages

@@ -1,0 +1,12 @@
+html
+  head
+    style
+      include ./style.css
+    title Message board
+    block head
+  body
+    main(class="container")
+      nav(class="navigation")
+        a(href="/") View messages
+        a(href="/new") Create message
+      block content

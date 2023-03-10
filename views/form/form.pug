@@ -1,0 +1,16 @@
+extends ../layout/layout.pug
+
+block append head
+  style
+    include style.css
+  title Create message
+block content
+  h1 Create a new message
+  form(action="/new", method="POST")
+    div(class="form__item")
+      label(for="author_name") Name
+      input(type="text", name="author_name", placeholder="Enter your name", required=true)
+    div(class="form__item")
+      label(for="message_text") Message
+      textarea(type="text", name="message_text", placeholder="Enter your message", required=true)
+    button(type="submit") Add message

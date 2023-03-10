@@ -1,0 +1,26 @@
+.form__item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 16px;
+}
+
+.form__item > input {
+  height: 24px;
+}
+
+.form__item > input, textarea {
+  border-radius: 8px;
+  border: 1px solid #919191;
+  outline: 0;
+  padding: 8px;
+  width: 250px;
+}
+
+form > button {
+  background-color: #22aa88;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  padding: 8px 16px;
+}

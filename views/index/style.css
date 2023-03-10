@@ -1,0 +1,18 @@
+.message-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.message {
+  background-color: #fafafa;
+  border-radius: 8px;
+  border: 1px solid #595959;
+  padding: 24px;
+}
+
+.message__author {
+  margin: unset;
+  padding: unset;
+}
